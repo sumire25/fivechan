@@ -3,7 +3,6 @@ package com.fivechan.forum.context.user.infrastructure;
 import com.fivechan.forum.context.user.application.CreateUser;
 import com.fivechan.forum.context.user.application.FindUserById;
 import com.fivechan.forum.context.user.domain.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
@@ -12,9 +11,7 @@ import java.util.UUID;
 @RequestMapping("/users")
 public class UserController {
 
-    @Autowired
     private CreateUser createUser;
-    @Autowired
     private FindUserById findUserById;
 
     @PostMapping

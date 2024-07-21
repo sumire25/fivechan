@@ -1,0 +1,3 @@
+### Dev
+#### Practicas Utilizadas
++ BeanConfiguration
