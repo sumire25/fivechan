@@ -16,7 +16,7 @@ public class UserController {
 
     @PostMapping
     public void createUser(@RequestBody User user) {
-        createUser.run(user.getId(), user.getName(), user.getDescription(), user.getAvatar());
+        createUser.execute(user.getId(), user.getName(), user.getDescription(), user.getAvatar());
     }
 
     @GetMapping("/{id}")

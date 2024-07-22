@@ -12,7 +12,7 @@ public class CreateUserAuth {
         this.userAuthRepository = userAuthRepository;
     }
 
-    public void run(UUID id, String username, String password, String email) {
+    public void execute(UUID id, String username, String password, String email) {
         UserAuth userAuth = new UserAuth(id, username, password, email);
         this.userAuthRepository.save(userAuth);
     }

@@ -4,6 +4,7 @@ import com.fivechan.forum.context.user.domain.User;
 import com.fivechan.forum.context.user.domain.UserRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -16,8 +17,8 @@ public class PostgresqlUserRepository implements UserRepository {
 
     @Override
     public List<User> findAll() {
-        // Encontrar todos los usuarios en PostgreSQL
-        return null;
+        List<User> users = new ArrayList<>();
+        return users;
     }
 
     @Override

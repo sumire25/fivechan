@@ -12,7 +12,7 @@ public class CreateUser {
         this.userRepository = userRepository;
     }
 
-    public void run(UUID id, String name, String description, String avatar) {
+    public void execute(UUID id, String name, String description, String avatar) {
         User user = new User(id, name, description, avatar);
         this.userRepository.save(user);
     }
