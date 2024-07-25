@@ -1,4 +1,4 @@
 package com.fivechan.forum.apps.backend;
 
-public class app {
+public class App {
 }
